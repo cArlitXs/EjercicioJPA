@@ -12,15 +12,39 @@ public class MundoBancario {
 		BancoRepository bancoRepository = new BancoRepository();
 		ClienteRepository clienteRepository = new ClienteRepository();
 		
+//		BANCOS
+
+//		if (bancoRepository.create(new Banco("BBVA", "Alicante")))
+//			System.out.println("Correcto");
+//		else
+//			System.out.println("Error");
+//
+//		if (bancoRepository.create(new Banco("Sabadell", "Alicante")))
+//		System.out.println("Correcto");
+//		else
+//			System.out.println("Error");
+//
+//		if (bancoRepository.create(new Banco("Caixa", "Barcelona")))
+//			System.out.println("Correcto");
+//		else
+//			System.out.println("Error");
+//
 //		if (bancoRepository.create(new Banco("Santander", "Santander")))
 //			System.out.println("Correcto");
 //		else
 //			System.out.println("Error");
+		
+//		CLIENTESS
 
-//		if (clienteRepository.create(new Cliente("456123789", "JuanMa", "C/ Ass")))
-//			System.out.println("Correcto");
-//		else
-//			System.out.println("Error");
+		if (clienteRepository.create(new Cliente("123456789", "Carlos", "asdasda")))
+			System.out.println("Correcto");
+		else
+			System.out.println("Error");
+		
+		if (clienteRepository.create(new Cliente("456123789", "JuanMa", "C/ Ass")))
+			System.out.println("Correcto");
+		else
+			System.out.println("Error");
 
 	}
 
