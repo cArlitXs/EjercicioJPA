@@ -31,7 +31,7 @@ public class ClienteRepository {
 	}
 
 	public Cliente read(String dni) {
-		return null;
+		return em.find(Cliente.class, dni);
 	}
 
 	public boolean update(String dni) {
@@ -42,7 +42,7 @@ public class ClienteRepository {
 		return false;
 	}
 
-	public List<Cliente> realAll() {
+	public List<Cliente> readAll() {
 		return null;
 	}
 

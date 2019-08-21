@@ -3,6 +3,8 @@ package es.eoi.jpa.entity;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -19,6 +21,7 @@ public class Cuenta {
 	
 	@Id
 	@Column(name = "id")
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer id;
 	
 	@Column(name = "saldo")
@@ -32,9 +35,8 @@ public class Cuenta {
 	@JoinColumn(name="dniCliente", referencedColumnName = "dni")
 	private Cliente cliente;
 
-	public Cuenta(Integer id, Double saldo, Banco banco, Cliente cliente) {
+	public Cuenta(Double saldo, Banco banco, Cliente cliente) {
 		super();
-		this.id = id;
 		this.saldo = saldo;
 		this.banco = banco;
 		this.cliente = cliente;

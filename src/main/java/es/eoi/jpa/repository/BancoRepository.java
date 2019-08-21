@@ -31,7 +31,7 @@ public class BancoRepository {
 	}
 	
 	public Banco read(Integer id) {
-		return null;
+		return em.find(Banco.class, id);
 	}
 	
 	public boolean update(Integer id) {
@@ -42,7 +42,7 @@ public class BancoRepository {
 		return false;
 	}
 	
-	public List<Banco> realAll(){
+	public List<Banco> readAll(){
 		return null;
 	}
 	
